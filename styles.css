@@ -1,10 +1,13 @@
 .square{
-        width: 6vw;
-        height: 6vw;
+        width: 3.8vw;
+        height: 3.8vw;
         border: black 1px solid;
 }
 
 #grid{
         display: flex;
+        max-width: 95vw;
+        max-height: 95vw;
         flex-wrap: wrap;
+        margin: auto;
 }
