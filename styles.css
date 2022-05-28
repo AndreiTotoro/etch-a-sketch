@@ -1,5 +1,10 @@
 .square{
-        width: 6.25vw;
-        height: 6.25vw;
+        width: 6vw;
+        height: 6vw;
         border: black 1px solid;
+}
+
+#grid{
+        display: flex;
+        flex-wrap: wrap;
 }
