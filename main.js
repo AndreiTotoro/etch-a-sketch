@@ -1,5 +1,6 @@
 //Style one square div
 const grid = document.querySelector(`#grid`);
+const changeButton = document.querySelector(`#change-grid`)
 
 //Create a 16 x 16  grid of square divs
 const makeGrid = (size) => {
@@ -18,5 +19,11 @@ for (let i = 1; i <= size * size; i++) {
 }
 
 }
+
+const gridChanger = () => {
+	makeGrid(prompt("What size grid do you want?"))
+}
+
+changeButton.addEventListener('click', gridChanger)
 
 makeGrid(16)
