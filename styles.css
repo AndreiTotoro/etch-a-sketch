@@ -1,13 +1,16 @@
-.square{
-        width: 3.8vw;
-        height: 3.8vw;
-        border: black 1px solid;
+.square {
+        height: 6.25%;
+        width: 6.25%;
+
 }
 
-#grid{
-        display: flex;
-        max-width: 95vw;
-        max-height: 95vw;
-        flex-wrap: wrap;
+#grid {
+        width: 500px;
+        height: 500px;
+        border: red 1px solid;
         margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+
+
 }
