@@ -3,6 +3,10 @@
         border: 1px black solid;
 }
 
+.square:hover {
+        background-color: blueviolet;
+}
+
 .clicked {
         background-color: black;
 }
