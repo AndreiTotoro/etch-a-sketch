@@ -14,6 +14,13 @@ const addListeners = (group) => {
 //Change the size of the current grid
 const makeGrid = (size) => {
 
+	if(size < 2 || size > 100){
+		alert("Please set a size between 2 and 100!")
+		return
+	} 
+	
+
+
 const oldgrid = document.querySelectorAll('.square')
 oldgrid.forEach((div) => {
 	div.remove()
