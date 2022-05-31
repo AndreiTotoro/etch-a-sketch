@@ -2,9 +2,21 @@
 const grid = document.querySelector(`#grid`);
 
 //Create a 16 x 16  grid of square divs
+const makeGrid = (size) => {
 
-for (let i = 1; i <= 16 * 16; i++) {
+const oldgrid = document.querySelectorAll('.square')
+oldgrid.forEach((div) => {
+	div.remove()
+})
+
+for (let i = 1; i <= size * size; i++) {
 	const square = document.createElement(`div`);
 	square.classList.toggle('square');
+	square.style.height = `${100.0 / size}%`
+	square.style.width = `${100.0 / size}%`
 	grid.appendChild(square);
 }
+
+}
+
+makeGrid(16)
