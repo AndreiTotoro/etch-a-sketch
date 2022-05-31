@@ -1,10 +1,11 @@
 .square {
         background-color: lightgrey;
+        border: 1px black solid;
 }
 
 #grid {
-        width: 500px;
-        height: 500px;
+        width: 800px;
+        height: 800px;
         border: red 1px solid;
         margin: auto;
         display: flex;
