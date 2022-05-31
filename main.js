@@ -2,7 +2,15 @@
 const grid = document.querySelector(`#grid`);
 const changeButton = document.querySelector(`#change-grid`)
 
-
+const addListeners = (group) => {
+	group.forEach((element) => {
+		element.addEventListener('click', () => {
+			
+				element.classList.toggle("clicked")
+			
+		})
+	})
+}
 //Change the size of the current grid
 const makeGrid = (size) => {
 
@@ -18,13 +26,15 @@ for (let i = 1; i <= size * size; i++) {
 	square.style.width = `${800.0 / size - 2}px`
 	grid.appendChild(square);
 }
+const newGrid = document.querySelectorAll('.square')
+
+addListeners(newGrid)
 
 }
 //Update the grid with the value the user gives
-const gridChanger = () => {
-	makeGrid(prompt("What size grid do you want?"))
-}
 
-changeButton.addEventListener('click', gridChanger)
+changeButton.addEventListener('click', () => {
+	makeGrid(prompt("What size grid do you want?"))
+})
 
 makeGrid(16)

@@ -3,6 +3,10 @@
         border: 1px black solid;
 }
 
+.clicked {
+        background-color: black;
+}
+
 #grid {
         width: 800px;
         height: 800px;
@@ -10,6 +14,5 @@
         margin: auto;
         display: flex;
         flex-wrap: wrap;
-
 
 }
